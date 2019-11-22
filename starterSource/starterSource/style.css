@@ -5,7 +5,12 @@ body, html {
   color: White;
 }
 
-.cd-logo, .kitchen-equipment, .cake-ingredients, .mixer, .oven, .rosecake, .utensils, .parallax {
+@media only screen and (max-device-width: 1024px) {
+  .cd-logo, .kitchen-equipment, .cake-ingredients, .mixer, .oven, .rosecake, .utensils, .parallax {
+    background-attachment: scroll;
+  }
+}
+.cd-logo, .kitchen-equipment, .cake-ingredients, .mixer, .oven, .utensils, .parallax {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +27,7 @@ body, html {
   background-size: auto;
 }
 
-h3 {
+.h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
@@ -68,7 +73,16 @@ h3 {
 
 .rosecake{
   background-image: url("rosecake.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #642580;
+  background-size: cover;
+  
+  min-height: 100%;
+  background-attachment: fixed;
 }
+
 
 .utensils{
   background-image: url("utensils.JPG");
@@ -78,3 +92,4 @@ h3 {
 .parallax{
   background-image: url("img_parallax.jpg");
 }
+
